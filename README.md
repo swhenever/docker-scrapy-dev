@@ -1,3 +1,12 @@
+Build
+============
+
+docker build -t tst/scrapy-dev .
+
+
+Run
+============
+
 Run as an interactive shell/environment that includes files from your present working directory:
 
 docker run -it --rm -v `pwd`:/code -w /code tst/scrapy-dev bash
@@ -7,6 +16,9 @@ docker run -it --rm -v `pwd`:/code -w /code tst/scrapy-dev bash
 -v creates a volume for the container (sets /code in the container to whatever is in your present working dir)
 bash is bash
 
+
+Test spiders
+============
 
 Inside, run scrapy:
 
