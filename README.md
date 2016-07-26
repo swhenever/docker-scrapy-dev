@@ -31,6 +31,10 @@ This runs a particular URL through scrapy (it attempts to auto-detect which spid
 
 This runs the specified spider (here, firstave, as defined in firstave.py in the Spiders repo) including pipelines.
 
+`scrapy shell http://first-avenue.com/event/2016/07/transmission-princetribute`
+
+Opens up the [scrapy shell](http://doc.scrapy.org/en/latest/topics/shell.html). You can run commands like `response.css('div.whatever::text').extract()` in the shell and immediately see what is returned. Very useful for figuring out proper selectors and transformations during development.
+
 `scrapy runspider stackoverflow_spider.py -o top-stackoverflow-questions.json`
 
 This is just a simple example spider included with this container, to verify that scrapy itself is working.
