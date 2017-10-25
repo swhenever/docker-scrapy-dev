@@ -5,10 +5,11 @@ CMD ["/sbin/my_init"]
 
 # INSTALL
 # install python/scrapy OS prereqs
-RUN apt-get update && apt-get install -y wget libffi-dev libxml2-dev libxslt1-dev zlib1g-dev libssl-dev
+RUN apt-get update && apt-get install -y wget libffi-dev libxml2-dev libxslt1-dev zlib1g-dev libssl-dev gcc
 
 # install python2.7 and dev
-RUN add-apt-repository ppa:fkrull/deadsnakes-python2.7
+#RUN add-apt-repository ppa:fkrull/deadsnakes-python2.7
+RUN add-apt-repository ppa:deadsnakes/ppa
 RUN apt-get update && apt-get install -y python2.7 python-dev
 
 # install pip
