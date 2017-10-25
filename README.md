@@ -1,7 +1,7 @@
 Build
 ============
 
-docker build -t tst/scrapy-dev .
+docker build -t theshowthing/scrapy-dev .
 
 
 Run
@@ -9,7 +9,7 @@ Run
 
 Run as an interactive shell/environment that includes files from your present working directory:
 
-`docker run -it --rm -v $(pwd):/code -w /code -e "SUBMIT_SHOWBILLS=0" -e "PYTHONDONTWRITEBYTECODE=1" tst/scrapy-dev bash`
+`docker run -it --rm -v $(pwd):/code -w /code -e "SUBMIT_SHOWBILLS=0" -e "PYTHONDONTWRITEBYTECODE=1" theshowthing/scrapy-dev bash`
 
 * `-it` gives you an interactive terminal in the commandline
 * `--rm` stops/removes the docker container after you exit it 
