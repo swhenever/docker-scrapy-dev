@@ -16,7 +16,7 @@ RUN apt-get update && apt-get install -y python2.7 python-dev
 RUN wget https://bootstrap.pypa.io/get-pip.py && python2.7 get-pip.py
 
 # install Scrapy and other packages we use on tst
-RUN pip install requests arrow service_identity Scrapy jsonpickle python-dotenv
+RUN pip install requests arrow service_identity Scrapy jsonpickle python-dotenv beautifulsoup4
 
 # logging
 
