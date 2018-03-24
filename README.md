@@ -11,6 +11,10 @@ Run as an interactive shell/environment that includes files from your present wo
 
 `docker run -it --rm -v $(pwd):/code -w /code -e "SUBMIT_SHOWBILLS=0" -e "PYTHONDONTWRITEBYTECODE=1" theshowthing/scrapy-dev bash`
 
+or, on Windows 10 in Powershell:
+
+`docker run -it --rm -v ${PWD}:/code -w /code -e "SUBMIT_SHOWBILLS=0" -e "PYTHONDONTWRITEBYTECODE=1" theshowthing/scrapy-dev bash`
+
 * `-it` gives you an interactive terminal in the commandline
 * `--rm` stops/removes the docker container after you exit it 
 * `-w` sets working directory for container
